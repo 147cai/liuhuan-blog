@@ -73,16 +73,6 @@ font:
 # //at.alicdn.com/t/font_1832207_c8i9n1ulxlt.css => 1832207_c8i9n1ulxlt
 iconfont: "1832207_c8i9n1ulxlt"
 
-# menu:
-#   首页: / || fas fa-home
-#   归档: /archives/ || fas fa-archive
-#   标签: /tags/ || fas fa-tags
-#   分类: /categories/ || fas fa-folder-open
-#   列表||fas fa-list:
-#     音乐: /music/ || fas fa-music
-#     电影: /movies/ || fas fa-video
-#   友链: /friends/ || fas fa-link
-#   关于: /about/ || fas fa-heart
 menu:
   home: / || home
   posts:
@@ -244,3 +234,17 @@ deploy:
   type: git
   repository: https://github.com/147cai/147cai.github.io.git
   branch: main
+
+#播放器
+aplayer:
+  meting: true
+
+
+audio:
+- title: 2021年度歌单
+  list:
+    - https://music.163.com/playlist?id=7192693569
+
+- title: ❤️love
+  list:
+    - https://music.163.com/playlist?id=6675897026
