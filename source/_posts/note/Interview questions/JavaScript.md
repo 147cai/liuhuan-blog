@@ -21,7 +21,7 @@ categories:
 
 闭包的内存泄露：
 
-![image-20230213220712311](C:\Users\32447\AppData\Roaming\Typora\typora-user-images\image-20230213220712311.png)
+![image-20230213220712311](https://cdn.jsdelivr.net/gh/147cai/blog-cdn/note/image-20230213220712311.png)
 
 ###### **2.宏任务和微任务？**
 
@@ -49,11 +49,11 @@ console.log(400)
 
 ###### 3.防抖和节流
 
-![image-20230213224807631](C:\Users\32447\AppData\Roaming\Typora\typora-user-images\image-20230213224807631.png)
+![image-20230213224807631](https://cdn.jsdelivr.net/gh/147cai/blog-cdn/note/image-20230213224807631.png)
 
 ###### 4.js函数的几种声明方式
 
-![image-20230213225234423](C:\Users\32447\AppData\Roaming\Typora\typora-user-images\image-20230213225234423.png)
+![image-20230213225234423](https://cdn.jsdelivr.net/gh/147cai/blog-cdn/note/image-20230213225234423.png)
 
 ###### 5.谈谈你对原型的理解？
 

@@ -82,7 +82,7 @@ menu:
     tags: /tags/ || tags
   关于: /about/ || user
   友链: /friends/ || heart
-  歌单: /music/ || music
+  歌单: /musics/ || music
 
 social:
   github: https://github.com/147cai || github || "#191717"
@@ -245,6 +245,14 @@ audio:
   list:
     - https://music.163.com/playlist?id=7192693569
 
-- title: ❤️love
+- title: ❤️网易云love
   list:
     - https://music.163.com/playlist?id=6675897026
+
+- title: 轻音乐
+  list:
+    - https://y.qq.com/n/yqq/playsquare/3535982902.html
+
+- title: ❤️QQ音乐love
+  list:
+    - https://y.qq.com/n/ryqq/playlist/2642086458.html
