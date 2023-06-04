@@ -1,7 +1,4 @@
-# Hexo Configuration
-## Docs: https://hexo.io/docs/configuration.html
-## Source: https://github.com/hexojs/hexo/
-
+# https://shoka.lostyu.me/computer-science/note/theme-shoka-doc/config/
 alternate: liuhuan
 
 # Assets
@@ -80,129 +77,54 @@ menu:
     archives: /archives/ || list-alt
     categories: /categories/ || th
     tags: /tags/ || tags
-  关于: /about/ || user
-  友链: /friends/ || heart
-  歌单: /musics/ || music
-
+  about: /about/ || user
+  friends: /friends/ || heart
+# 
+# Social Links
+# Usage: `Key: permalink || icon || color`
+# Key is the link label showing to end users.
+# Value before `||` delimiter is the target permalink,
+# secend value is the name of Font icon.
 social:
   github: https://github.com/147cai || github || "#191717"
   
   email: mailto:3244735816@qq.com || envelope || "#55acd5"
-
 sidebar:
   # Sidebar Position.
   position: left
   #position: right
   # Replace the default avatar image and set the url here.
   avatar: avatar.jpg
-
+  
 widgets:
   random_posts: true # 显示随机文章
   recent_comments: true # 显示最近评论
 
-# Directory
-source_dir: source
-public_dir: public
-tag_dir: tags
-archive_dir: archives
-category_dir: categories
-code_dir: downloads/code
-i18n_dir: :lang
-skip_render:
+footer:
+  # Specify the date when the site was setup. If not defined, current year will be used.
+  since: 2020
+  # Dependencies: https://github.com/theme-next/hexo-symbols-count-time
+  count: true
+  powered: true
 
-#locl search
-local_search:
-  enable: true
-  preload: true
-  CDN:
+post:
+  count: true
 
-#网站图标
-# favicon: https://www.fomal.cc/favicon.ico
+# ---------------------------------------------------------------
+# Third Party Plugins & Services Settings
+# ---------------------------------------------------------------
 
-highlight_theme: light
+# Comments
+# Valine
+# For more information: https://valine.js.org, https://github.com/xCss/Valine
+# https://valine.js.org/quickstart.html
 
-# A simple 404 page
-error_404:
-  enable: true
-  subtitle: "页面沒有找到"
-  background:  http://localhost:4000/404.html
-
-# Writing
-new_post_name: :title.md # File name of new posts
-default_layout: post
-titlecase: false # Transform title into titlecase
-external_link:
-  enable: true # Open external links in new tab
-  field: site # Apply to the whole site
-  exclude: ''
-filename_case: 0
-render_drafts: false
-post_asset_folder: false
-relative_link: false
-future: true
-highlight:
-  enable: true
-  line_number: true
-  auto_detect: false
-  tab_replace: ''
-  wrap: true
-  hljs: false
-prismjs:
-  enable: false
-  preprocess: true
-  line_number: true
-  tab_replace: ''
-
-# Home page setting
-# path: Root path for your blogs index page. (default = '')
-# per_page: Posts displayed per page. (0 = disable pagination)
-# order_by: Posts order. (Order by date descending by default)
-index_generator:
-  path: ''
-  per_page: 5
-  order_by: -date
-
-# Category & Tag
-default_category: uncategorized
-category_map:
-tag_map:
-
-# Metadata elements
-## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
-meta_generator: true
-
-# Date / Time format
-## Hexo uses Moment.js to parse and display date
-## You can customize the date format as defined in
-## http://momentjs.com/docs/#/displaying/format/
-date_format: YYYY-MM-DD
-time_format: HH:mm:ss
-## updated_option supports 'mtime', 'date', 'empty'
-updated_option: 'mtime'
-
-# Pagination
-## Set per_page to 0 to disable pagination
-per_page: 5
-pagination_dir: page
-
-# Include / Exclude file(s)
-## include:/exclude: options only apply to the 'source/' folder
-include:
-exclude:
-ignore:
-
-# Extensions
-## Plugins: https://hexo.io/plugins/
-## Themes: https://hexo.io/themes/
-theme: shoka
-
-#增加评论系统
 valine:
   appId: 8Isy0XDDWk0vRpErDcNHaHiy-gzGzoHsz #Your_appId
   appKey: 0ZaNpgLmZOB4HzRUgn7A6TZu #Your_appkey
   placeholder: ヽ(○´∀`)ﾉ♪ # Comment box placeholder
   avatar: mp # Gravatar style : mp, identicon, monsterid, wavatar, robohash, retro
-  pageSize: 5 # Pagination size
+  pageSize: 10 # Pagination size
   lang: zh-CN
   visitor: true # Article reading statistic
   NoRecordIP: false # Whether to record the commenter IP
@@ -227,19 +149,7 @@ valine:
     investor:
       # - hash of investor1@email.com
 
-
-# Deployment
-## Docs: https://hexo.io/docs/one-command-deployment
-deploy:
-  type: git
-  repository: https://github.com/147cai/147cai.github.io.git
-  branch: main
-
-#播放器
-aplayer:
-  meting: true
-
-
+# bgm
 audio:
 - title: 2021年度歌单
   list:
@@ -256,3 +166,17 @@ audio:
 - title: ❤️QQ音乐love
   list:
     - https://y.qq.com/n/ryqq/playlist/2642086458.html
+
+# Dependencies: https://github.com/amehime/hexo-renderer-multi-markdown-it
+pangu: true
+
+# ---------------------------------------------------------------
+# analytics & SEO Settings
+# ---------------------------------------------------------------
+
+
+# Disable Baidu transformation on mobile devices.
+disable_baidu_transformation: true
+
+# Automatically add external URL with Base64 encrypt & decrypt.
+exturl: true
